@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* Design tokens */
+@theme {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    /* Fondos y superficies */
+    --color-base: #0A0E0D;
+    --color-base-2: #0F1413;
+    --color-surface: #151B19;
+    --color-surface-2: #1C2422;
+
+    /* Bordes */
+    --color-line: #25302D;
+    --color-line-strong: #34423E;
+
+    /* Marca: esmeralda para CTA e indicadores, jade para texto de acento,
+       pino para fondos teñidos */
+    --color-primary: #10B981;
+    --color-primary-hover: #34D399;
+    --color-on-primary: #03140E;
+    --color-jade: #4CC9A0;
+    --color-pine: #0E3B2E;
+
+    /* Texto */
+    --color-ink: #ECF2EF;
+    --color-ink-2: #A3B1AC;
+    --color-ink-3: #7E8C87;
+
+    --color-danger: #F87171;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        color-scheme: dark;
+    }
+
+    body {
+        background: var(--color-base);
+        color: var(--color-ink);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-jade);
+        outline-offset: 2px;
+    }
+
+    ::selection {
+        background: var(--color-pine);
+        color: var(--color-ink);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+}
