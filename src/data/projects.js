@@ -15,6 +15,7 @@ export const projects = [
         description:
             "PetBot es una aplicación web full stack para el cuidado de mascotas. Cada usuario puede registrar sus mascotas con foto, llevar el control de sus medicamentos y citas veterinarias mediante un chat guiado, y consultar dudas de cuidado a un asistente de IA basado en Google Gemini 2.5 Flash. El frontend está hecho con React, Vite y Tailwind CSS; el backend es una API REST en FastAPI con autenticación JWT, contraseñas cifradas con bcrypt y una base de datos PostgreSQL gestionada con SQLAlchemy.",
         tech: ["React", "Vite", "Tailwind CSS", "FastAPI", "SQLAlchemy", "PostgreSQL", "JWT", "Google Gemini"],
+        github: "https://github.com/deisymarcosta13-gif/PetBot",
         demo: "https://pet-bot-beige.vercel.app/",
     },
     {
@@ -24,6 +25,7 @@ export const projects = [
         description:
             "Malla Curricular es una aplicación web full stack para organizar y gestionar planes de estudio universitarios. Permite crear mallas académicas, organizar semestres y materias, definir estados, calificaciones y prerrequisitos, además de consultar y filtrar el progreso académico. Incluye autenticación de usuarios y recuperación de contraseña. El frontend está desarrollado con React y Vite; el backend es una API REST en FastAPI con SQLAlchemy y PostgreSQL.",
         tech: ["React", "Vite", "FastAPI", "SQLAlchemy", "PostgreSQL", "JWT", "Alembic", "Vercel", "Render", "Supabase"],
+        github: "https://github.com/deisymarcosta13-gif/malla-curricular",
         demo: "https://malla-curricular-89mp.vercel.app",
     },
     {

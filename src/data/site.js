@@ -9,7 +9,7 @@ export const site = {
     // CV: coloca el PDF en public/cv-mariana-acosta.pdf y cambia este valor
     // a "/cv-mariana-acosta.pdf". Mientras esté vacío, los botones de CV no
     // se muestran (así nunca apuntan a un archivo inexistente).
-    cv: "",
+    cv: "/cv-mariana-acosta.pdf",
 };
 
 // En desarrollo muestra las opciones de CV (sin enlace) para revisar su diseño.

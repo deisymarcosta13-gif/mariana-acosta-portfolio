@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks, site, showCv } from "../../data/site";
+import { navLinks, site } from "../../data/site";
 import SakuraMark from "../ui/SakuraMark";
-import Button from "../ui/Button";
 
 function Navbar() {
     const [scrolled, setScrolled] = useState(() => window.scrollY > 16);
@@ -90,20 +89,6 @@ function Navbar() {
                             </li>
                         );
                     })}
-
-                    {showCv && (
-                        <li className="ml-2">
-                            <Button
-                                href={site.cv || undefined}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                variant="secondary"
-                                size="sm"
-                            >
-                                CV
-                            </Button>
-                        </li>
-                    )}
                 </ul>
 
                 {/* HAMBURGER BUTTON */}
@@ -151,20 +136,6 @@ function Navbar() {
                                     </li>
                                 );
                             })}
-
-                            {showCv && (
-                                <li>
-                                    <a
-                                        href={site.cv || undefined}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onClick={() => setOpen(false)}
-                                        className="flex h-12 items-center rounded-lg px-3 text-base text-ink-2"
-                                    >
-                                        CV
-                                    </a>
-                                </li>
-                            )}
                         </ul>
                     </motion.div>
                 )}

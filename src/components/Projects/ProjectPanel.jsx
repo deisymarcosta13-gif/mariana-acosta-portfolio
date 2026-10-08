@@ -98,7 +98,7 @@ function ProjectPanel({ project, number }) {
                             {project.github && (
                                 <Button href={project.github} size="sm" variant="secondary">
                                     <FaGithub />
-                                    Código
+                                    GitHub
                                 </Button>
                             )}
                         </motion.div>
